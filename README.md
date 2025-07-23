@@ -1,54 +1,54 @@
-# 🌉 Bridge the Gap
+# Bridge the Gap 🌉
 
-**Bridge the Gap** is a web-based platform that connects **wedding venues** and **NGOs** to **redistribute leftover food** responsibly. Our goal is to reduce food waste by bridging the communication gap between food sources (venues) and distributors (NGOs or individuals).
-
----
-
-## 💡 Thought Behind the Project
-
-Every day, large amounts of food are wasted at social events like weddings and parties. At the same time, thousands of people and animals go hungry. This project aims to:
-
-- Reuse food safely and responsibly.
-- Connect donors (wedding venues) and collectors (NGOs).
-- Promote environmental sustainability and hunger reduction.
+Bridge the Gap is a community-driven platform that connects **wedding venues** and **event organizers** with **NGOs** and **animal welfare groups** to minimize food waste and distribute surplus food to those in need.
 
 ---
 
-## 🛠️ Tech Stack
+## 🌟 Purpose Behind the Project
 
-- **React 19 (with TypeScript)** – Frontend Framework
-- **Tailwind CSS** – Styling
-- **Vite** – Build Tool
-- **Lucide-React** – Icon Set
-- **GitHub Pages** – Deployment
+During many social gatherings and events, a large amount of food goes to waste. At the same time, numerous people and animals go hungry. This platform aims to **bridge that gap** by:
 
----
-
-## 🚀 Key Features
-
-- Dynamic registration forms for venues and NGOs
-- Animated floating icons and scroll effects
-- Scroll-based animations and section highlighting
-- Clean and responsive UI
-- Interactive articles and maps (Google Maps integration planned)
+- Helping NGOs register to receive food.
+- Allowing venues to notify about available leftovers.
+- Promoting awareness through articles and outreach.
 
 ---
 
-## 🔧 Local Development
+## 🧠 Inspiration
 
-### Prerequisites
+This project was born during a hackathon to create a real-world solution that addresses **food wastage and hunger simultaneously**. The idea was simple: connect surplus to need with a well-designed, user-friendly interface.
 
-- Node.js & npm installed
+---
 
-### Setup
+## 🚀 Features
+
+- ✍️ Registration portals for venues and NGOs.
+- 📍 Location-based food request and pickup info.
+- 📖 Articles to raise awareness.
+- 🎨 Elegant animations and responsive design.
+- 🗺️ Interactive maps (Google Maps API ready).
+
+---
+
+## 🔧 Technologies Used
+
+- **React 19**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **Lucide Icons**
+- **gh-pages** for deployment
+
+---
+
+## 🌐 Deployment
+
+This project is live and deployed using GitHub Pages.
+
+👉 **[Live Website](https://subhamnayak18.github.io/bridge-the-gap/)**
+
+To deploy locally, use:
 
 ```bash
-# Clone the repo
-git clone https://github.com/Subhamnayak18/bridge-the-gap.git
-cd bridge-the-gap
-
-# Install dependencies
 npm install
-
-# Start dev server
-npm run dev
+npm run deploy
