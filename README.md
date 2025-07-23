@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# 🌉 Bridge the Gap
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bridge the Gap** is a web-based platform that connects **wedding venues** and **NGOs** to **redistribute leftover food** responsibly. Our goal is to reduce food waste by bridging the communication gap between food sources (venues) and distributors (NGOs or individuals).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💡 Thought Behind the Project
 
-## Expanding the ESLint configuration
+Every day, large amounts of food are wasted at social events like weddings and parties. At the same time, thousands of people and animals go hungry. This project aims to:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Reuse food safely and responsibly.
+- Connect donors (wedding venues) and collectors (NGOs).
+- Promote environmental sustainability and hunger reduction.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React 19 (with TypeScript)** – Frontend Framework
+- **Tailwind CSS** – Styling
+- **Vite** – Build Tool
+- **Lucide-React** – Icon Set
+- **GitHub Pages** – Deployment
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Key Features
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Dynamic registration forms for venues and NGOs
+- Animated floating icons and scroll effects
+- Scroll-based animations and section highlighting
+- Clean and responsive UI
+- Interactive articles and maps (Google Maps integration planned)
+
+---
+
+## 🔧 Local Development
+
+### Prerequisites
+
+- Node.js & npm installed
+
+### Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/Subhamnayak18/bridge-the-gap.git
+cd bridge-the-gap
+
+# Install dependencies
+npm install
+
+# Start dev server
+npm run dev
