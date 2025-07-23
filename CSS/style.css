@@ -1,0 +1,353 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff; /* Light blue background for the body */
+}
+/* Top Bar Styles */
+.top-bar {
+    background-color:#03002f; /* Dark blue background for the top bar */
+    color: white;
+    padding: 10px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-bar .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar-left, .top-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.dropbtn {
+    background-color: #004080; /* Slightly lighter blue for the button */
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff; /* White background for the dropdown */
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333333; /* Dark text color */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; /* Light gray background on hover */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #003366; /* Darker blue for the button when dropdown is visible */
+}
+
+
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #ffffff, #296db0); /* Gradient background */
+    color: #ffffff;
+    padding: 1.5em 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-logo {
+    height: 150px; /* Reduced height for the logo */
+    display: block;
+    margin-left: 20px
+    margin: 0 auto; /* Center the logo */
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #d3d3d3;
+    transform: scale(1.1);
+}
+
+/* Section Styles */
+section {
+    padding: 3em 0;
+    background-color: #C7FFD8; /* White background for sections */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Forms and Buttons */
+.form-container {
+    margin-bottom: 2em;
+    padding: 2em;
+    background-color: #f0f4f8; /* Very light gray background for forms */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h3 {
+    margin-bottom: 1em;
+    color: #003366; /* Dark blue color for headings */
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+/* Input fields styling */
+input[type="text"], 
+input[type="email"], 
+textarea, 
+select {
+    width: 100%;
+    padding: 0.75em;
+    margin: 0.5em 0;
+    border: 1px solid #b0bec5; /* Light gray border */
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling for input fields in the same line */
+input[type="text"].half-width, 
+input[type="email"].half-width {
+    width: calc(50% - 1em); /* Adjust width to fit two fields side by side */
+    display: inline-block;
+    margin-right: 1em;
+}
+
+input[type="text"].half-width:last-child, 
+input[type="email"].half-width:last-child {
+    margin-right: 0; /* Remove right margin from the last element */
+}
+
+input[type="submit"] {
+    background-color: #003366; /* Dark blue background for buttons */
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #004080; /* Slightly lighter blue background on hover */
+    transform: scale(1.05);
+}
+
+/* Accordion Styles */
+.accordion {
+    background-color: #003366; /* Dark blue background for buttons */
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.accordion:hover,
+.accordion.active {
+    background-color: #004080; /* Lighter blue background on hover and active */
+}
+
+.panel {
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #98DED9; /* Light gray background for form panels */
+    transition: max-height 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Map Section */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Search Button Styles */
+.search-container {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.search-btn {
+    background-color: #28a745; /* Green background for buttons */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05);
+}
+
+/* Articles Section Styles */
+#articles {
+    padding: 2em 0;
+    background-color: #f4f4f9; /* Light gray background for articles section */
+}
+
+.article {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    margin: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+}
+
+.article h3 {
+    font-size: 1.25em;
+    color: #003366; /* Dark blue color for article titles */
+    padding: 0.5em;
+}
+
+.article p {
+    padding: 0 1em;
+    color: #666;
+}
+
+.read-article {
+    display: block;
+    margin-top: 10px;
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-article:hover {
+    text-decoration: underline;
+}
+.form-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 20px auto; /* Add margin to the top and bottom for spacing */
+    display: block; /* Ensure the image is treated as a block element */
+    padding-top: 20px; /* Add padding to the top to prevent sticking */
+    text-align: center; /* Center the image within the panel */
+}
+.text-box {
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Space inside the box */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-top: 20px; /* Space above the box */
+    color: #333333; /* Text color */
+    max-width: 800px; /* Optional: Limits the width of the text box */
+    margin-left: auto; /* Center the box horizontally */
+    margin-right: auto; /* Center the box horizontally */
+}
+
